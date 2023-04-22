@@ -1,0 +1,215 @@
+.contenedorPrincipal{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background: aliceblue;
+}
+
+.txtArea{
+    position: absolute;
+    width: 42%;
+    height: 60%;
+    left: 12%;
+    top: 15%;
+    border: none;
+    font-family: system-ui;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 150%;
+    background-color: aliceblue;
+}
+
+.txtArea::placeholder{
+    font-family: 'Segoe UI';
+    font-style: normal;
+    color: rgba(red, green, blue, 10);
+}
+
+.txtArea:focus, txtArea:active{
+    border: none;
+    outline: none;
+}
+
+.aviso{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+    position: absolute;
+    margin: 0;
+    width: 80%;
+    left: 12%;
+    top: 80%;
+}
+
+.aviso p{
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 150%;
+    color: rgba(58, 45, 45, 0.671);
+    opacity: 0.8;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.botones{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 1% 0;
+    position: absolute;
+    width: 80%;
+    left: 12%;
+    top: 82%;
+}
+
+.btnEncriptar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1%;
+    gap: 8px;
+    width: 25%;
+    background-color: #0a3871;
+    border-radius: 20px;
+    font-family: system-ui;
+    font-size: 18px;
+    line-height: 19px;
+    text-align: center;
+    color: floralwhite;
+
+}
+
+.btnDesencriptar{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 1%;
+    gap: 8px;
+    width: 25%;
+    background: #d8dfe8;
+    border: 1px solid #0a3871 ;
+    border-radius: 20px;
+    font-family: system-ui;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 19px;
+    text-align: center;
+}
+/*
+.btnEncriptar:hover, .btnDesencriptar:hover{
+    margin: 0.3%;
+    width: 24.%;
+    padding: 1.8%;
+}
+*/
+.contenedorEncriptado{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    width: 30%;
+    height: 90%;
+    left: 60%;
+    top: 5%;
+    background-color: white;
+    box-shadow: 0px 20px 30px -8px rgba(0, 0, 0, 0.46); 
+    border-radius: 20px;
+}
+
+.mensajeEncriptado{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1%;
+    gap: 8px;
+    position: absolute;
+    width: 100%;
+    top: 65%;
+    text-align: center;
+}
+
+.mensajeEncriptado h2{
+    width: 60%;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 120%;
+    text-align: center;
+}
+
+.mensajeEncriptado p{
+    width: 80%;
+    line-height: 120%;
+    text-align: center;
+
+}
+
+.contenedorEncriptado img{
+    position: absolute;
+    width: 80%;
+    height: 50%;
+    top: 15%;
+    align-items: center;
+
+}
+
+/* Responsive Design */
+
+@media (max-width: 57.5em){
+    .contenedorPrincipal{
+        display: flex;
+        flex-direction: row;
+    }
+    .contenedorEncriptar{
+        width: 100%;
+    }
+    .txtArea{
+        width: 80%;
+        height: 60%;
+        left: 10%;
+        top: 5%;
+    }
+    .aviso{
+        width: 80%;
+        left: 10%;
+        top: 67%;
+    }
+    .aviso p{
+        font-size: 16px;
+    }
+    .botones{
+        width: 80%;
+        left: 10%;
+        top: 70%;
+    }
+    .btnEncriptar, .btnDesencriptar{
+        width: 48%;
+        border-radius: 16px;
+    }
+    .btnEncriptar:hover, .btnDesencriptar:hover{
+        margin: 0.3%;
+        width: 47.5%;
+        padding: 1.8%;
+    }
+    .contenedorEncriptado{
+        width: 80%;
+        height: 15%;
+        left: 10%;
+        top: 80%;
+    }
+    .mensajeEncriptado{
+        width: 100%;
+        top: 5%;
+    }
+    .contenedorEncriptado img{
+        top: 0;
+        display: none;
+        visibility: hidden;
+    }
+
+   
+}
