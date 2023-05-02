@@ -11,7 +11,7 @@
 <body>
     <div class="contenedorPrincipal">
         <div class="contenedorEncriptar">
-            <textarea id="txtArea" class="txtArea" cols="30" rows="10" placeholder="Ingrese su mensaje a encriptar o desencriptar" autofocus></textarea>
+            <textarea id="txtarea" class="txtArea" cols="30" rows="10" placeholder="Ingrese su mensaje a encriptar o desencriptar" autofocus></textarea>
         </div> 
         <div class="aviso">
             <p> Solo letra minusculas y sin acentos </p>
@@ -24,11 +24,15 @@
             <img src="img/buscando.png" alt="buscando" id="imagen">
             <div class="mensajeEncriptado" id="mensajeEncriptado">
                 <h2 id="tituloMensaje"> Ningun mensaje encontrado </h2>
-                <p id="mensajeParrafo"> Ingresar el texto que desea encriptar o desencriptar</p>
-                <!--<textarea id="resultadoEncriptado" cols="30" rows="10"></textarea>-->
+                <p id="mensajeParrafo"> Ingresar el texto que desea encriptar o desencriptar</p>       
+            </div>
+
+            <div class="resultado">
+                <textarea id="textResultado" class="txtAreaResultado" cols="30" rows="10"></textarea>
+                <button id="btncopiar" class="btnCopiar" type="button" onclick="copiar()">Copiar</button>
             </div>
         </div>
-
+        
     </div> 
 </body>
 <script src="js/script.js"></script>

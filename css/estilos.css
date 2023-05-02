@@ -12,9 +12,11 @@
     left: 12%;
     top: 15%;
     border: none;
+    border-radius: 10px;
+    resize: none;
     font-family: system-ui;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 300;
     font-size: 28px;
     line-height: 150%;
     background-color: aliceblue;
@@ -154,6 +156,62 @@
     height: 50%;
     top: 15%;
     align-items: center;
+
+}
+
+.resultado{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    width: 80%;
+    height: 80%;
+    top: 10%;
+    padding: 1em 1em;
+    align-items: center;
+    
+}
+
+.txtAreaResultado{
+    padding: 0.5em 0.5em;
+    margin: 0.5em 0.5em;
+    position: absolute;
+    width: 70%;
+    height: 50%;
+    top: 1%;
+    resize: none;
+    border: none;
+    border-radius: 10px;
+    font-family: system-ui;
+    font-style: normal;
+    font-weight: 200;
+    font-size: 28px;
+    line-height: 150%;
+    background-color: aliceblue;
+}
+
+.btnCopiar{
+    
+    font-family: system-ui;
+    position: absolute;
+    margin-top: 30%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 2%;
+    gap: 8px;
+    width: 25%;
+    background: #d8dfe8;
+    border: 1px solid #0a3871 ;
+    border-radius: 10px;
+    font-family: system-ui;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 19px;
+    text-align: center;
+    
 
 }
 
