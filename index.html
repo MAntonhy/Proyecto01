@@ -7,8 +7,12 @@
     <title>Encriptador de mensaje</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/estilos.css">
+    <link rel="icon" href="img/alura.png" type="image/png" sizes="16x16">
 </head>
 <body>
+    <header>
+        <img src="img/alura.png" alt="logo" class="logo"> 
+    </header>
     <div class="contenedorPrincipal">
         <div class="contenedorEncriptar">
             <textarea id="txtarea" class="txtArea" cols="30" rows="10" placeholder="Ingrese su mensaje a encriptar o desencriptar" autofocus></textarea>
@@ -26,14 +30,20 @@
                 <h2 id="tituloMensaje"> Ningun mensaje encontrado </h2>
                 <p id="mensajeParrafo"> Ingresar el texto que desea encriptar o desencriptar</p>       
             </div>
-
             <div class="resultado">
                 <textarea id="textResultado" class="txtAreaResultado" cols="30" rows="10"></textarea>
                 <button id="btncopiar" class="btnCopiar" type="button" onclick="copiar()">Copiar</button>
+                <button type="button" id="btnlimpiar" class="btnLimpiar" onclick="limpiar()">limpiar campos</button>
             </div>
         </div>
-        
     </div> 
+    <footer>
+        <p>&copy; Derechos Reservados Michel Peña </p>
+        <div class="redes">
+            <img src="img/github.png" alt="github">
+            <img src="img/linkedin.png" alt="linkedin">
+        </div>
+    </footer>
 </body>
 <script src="js/script.js"></script>
 </html>

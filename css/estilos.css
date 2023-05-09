@@ -5,6 +5,10 @@
     background: aliceblue;
 }
 
+.logo{
+    margin: 1em;
+}
+
 .txtArea{
     position: absolute;
     width: 42%;
@@ -37,7 +41,7 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 8px;
+    gap: 10px;
     position: absolute;
     margin: 0;
     width: 80%;
@@ -49,6 +53,7 @@
     font-size: 12px;
     font-weight: 400;
     line-height: 150%;
+    font-family: system-ui;
     color: rgba(58, 45, 45, 0.671);
     opacity: 0.8;
     flex: none;
@@ -65,6 +70,7 @@
     width: 80%;
     left: 12%;
     top: 82%;
+    gap: 8px;
 }
 
 .btnEncriptar{
@@ -112,6 +118,7 @@
 .contenedorEncriptado{
     display: flex;
     justify-content: center;
+    font-family: system-ui;
     position: absolute;
     width: 30%;
     height: 90%;
@@ -138,7 +145,7 @@
 .mensajeEncriptado h2{
     width: 60%;
     font-size: 24px;
-    font-weight: 300;
+    font-weight: 400;
     line-height: 120%;
     text-align: center;
 }
@@ -147,6 +154,7 @@
     width: 80%;
     line-height: 120%;
     text-align: center;
+    font-weight: 300;
 
 }
 
@@ -160,7 +168,7 @@
 }
 
 .resultado{
-    display: flex;
+    display: none;
     flex-direction: column;
     justify-content: center;
     position: absolute;
@@ -191,9 +199,8 @@
 }
 
 .btnCopiar{
-    
-    font-family: system-ui;
     position: absolute;
+    top: 50%;
     margin-top: 30%;
     box-sizing: border-box;
     display: flex;
@@ -202,7 +209,7 @@
     justify-content: center;
     padding: 2%;
     gap: 8px;
-    width: 25%;
+    width: 50%;
     background: #d8dfe8;
     border: 1px solid #0a3871 ;
     border-radius: 10px;
@@ -212,6 +219,38 @@
     line-height: 19px;
     text-align: center;
     
+
+}
+
+footer{
+    display: grid;
+    justify-content: center;
+}
+.redes{
+    display: inline-flex;
+    justify-content: center;
+}
+
+.btnLimpiar{
+    position: absolute;
+    top: 60%;
+    margin-top: 30%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 2%;
+    gap: 8px;
+    width: 50%;
+    background: #d8dfe8;
+    border: 1px solid #0a3871 ;
+    border-radius: 10px;
+    font-family: system-ui;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 19px;
+    text-align: center;
 
 }
 

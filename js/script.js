@@ -1,6 +1,5 @@
-//Obtencion de variables, acepto y encriptacion por replace
-    let resultado = document.getElementById("txtAreaResultado");
-    
+
+
 function encriptar(){
     let texto = document.getElementById("txtarea").value.toLowerCase();
     let = textoEncriptado = texto.replace(/e/img, "enter");
@@ -8,11 +7,10 @@ function encriptar(){
     let = textoEncriptado = textoEncriptado.replace(/i/img, "imes");
     let = textoEncriptado = textoEncriptado.replace(/a/img, "ai");
     let = textoEncriptado = textoEncriptado.replace(/u/img, "ufat");
-
     document.getElementById("imagen").style.display = "none";
-    document.getElementById("tituloMensaje").style.display = "none";
-    document.getElementById("mensajeParrafo").style.display = "none";
-    document.getElementById("textResultado").innerHTML = textoEncriptado;    
+    document.getElementById("mensajeEncriptado").style.display = "none";
+    document.getElementById("textResultado").innerHTML = textoEncriptado;
+    
 }
 
 function desencriptar(){
@@ -24,6 +22,7 @@ function desencriptar(){
     let = textoDesencriptado = textoDesencriptado.replace(/enter/img, "e");
 
     document.getElementById("textResultado").innerHTML = textoDesencriptado;
+    
 
 }
 
@@ -35,3 +34,14 @@ function desencriptar(){
       
       document.querySelector("#textResultado").addEventListener("click", copy);
 
+function limpiar(){
+    document.getElementById("txtarea").value = "";
+    document.getElementById("textResultado").value = "";
+    document.getElementById("textarea").focus;
+    
+}
+
+function mostrar(){
+
+    document.getElementById("resultado").style.display = "block";
+}
