@@ -10,7 +10,7 @@ function encriptar(){
     
     document.getElementById("imagen").style.display = "none";
     document.getElementById("mensajeEncriptado").style.display = "none";
-    document.getElementById("resultado").style.display = "block";
+    document.getElementById("resultado").style.display = "flex";
     document.getElementById("textResultado").innerHTML = textoEncriptado;
     
 }

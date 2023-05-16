@@ -1,12 +1,13 @@
 .contenedorPrincipal{
     position: relative;
-    width: 100vw;
-    height: 100vh;
+    /*width: 100vw;*/
+    height: 80vh;
     background: aliceblue;
 }
 
 .logo{
     margin: 1em;
+    width: 3%;
 }
 
 .txtArea{
@@ -16,7 +17,7 @@
     left: 12%;
     top: 15%;
     border: none;
-    border-radius: 10px;
+    /*border-radius: 10px;*/
     resize: none;
     font-family: system-ui;
     font-style: normal;
@@ -109,7 +110,7 @@
     text-align: center;
 }
 
-.btnEncriptar:hover, .btnDesencriptar:hover{
+.btnEncriptar:hover, .btnDesencriptar:hover, .btnCopiar:hover{
     margin: 0.3%;
     width: 24.%;
     padding: 1.8%;
@@ -172,9 +173,9 @@
     flex-direction: column;
     justify-content: center;
     position: absolute;
-    width: 80%;
-    height: 80%;
-    top: 10%;
+    width: 90%;
+    height: 90%;
+    top: 2%;
     padding: 1em 1em;
     align-items: center;
     
@@ -184,41 +185,38 @@
     padding: 0.5em 0.5em;
     margin: 0.5em 0.5em;
     position: absolute;
-    width: 70%;
-    height: 50%;
-    top: 1%;
+    width: 75%;
+    height: 70%;
+    top: 5%;
     resize: none;
     border: none;
-    border-radius: 10px;
+    border-radius: 20px;
     font-family: system-ui;
     font-style: normal;
-    font-weight: 200;
-    font-size: 28px;
+    font-weight: 300;
+    font-size: 27px;
     line-height: 150%;
     background-color: aliceblue;
 }
 
 .btnCopiar{
-    position: absolute;
-    top: 50%;
-    margin-top: 30%;
     box-sizing: border-box;
     display: flex;
-    flex-direction: row;
-    align-items: flex-start;
     justify-content: center;
+    position: absolute;
     padding: 2%;
-    gap: 8px;
-    width: 50%;
+    top: 82%;
+    width: 60%;
+    height: 10%;
     background: #d8dfe8;
     border: 1px solid #0a3871 ;
-    border-radius: 10px;
+    border-radius: 20px;
     font-family: system-ui;
     font-size: 18px;
     font-weight: 400;
     line-height: 19px;
-    text-align: center;
-    
+    align-items: center;
+    flex-direction: row-reverse;
 
 }
 
@@ -226,33 +224,14 @@ footer{
     display: grid;
     justify-content: center;
 }
+footer p{
+    padding: 0.5em;
+}
 .redes{
     display: inline-flex;
     justify-content: center;
 }
 
-.btnLimpiar{
-    position: absolute;
-    top: 60%;
-    margin-top: 30%;
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: center;
-    padding: 2%;
-    gap: 8px;
-    width: 50%;
-    background: #d8dfe8;
-    border: 1px solid #0a3871 ;
-    border-radius: 10px;
-    font-family: system-ui;
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 19px;
-    text-align: center;
-
-}
 
 /* Responsive Design */
 
@@ -264,16 +243,20 @@ footer{
     .contenedorEncriptar{
         width: 100%;
     }
+    .logo{
+        width: 4%;
+    }
     .txtArea{
         width: 80%;
-        height: 60%;
+        height: 40%;
         left: 10%;
-        top: 5%;
+        top: 2%;
+        font-size: 23px;
     }
     .aviso{
         width: 80%;
         left: 10%;
-        top: 67%;
+        top: 47%;
     }
     .aviso p{
         font-size: 16px;
@@ -281,11 +264,11 @@ footer{
     .botones{
         width: 80%;
         left: 10%;
-        top: 70%;
+        top: 50%;
     }
     .btnEncriptar, .btnDesencriptar{
         width: 48%;
-        border-radius: 16px;
+        border-radius: 15px;
     }
     .btnEncriptar:hover, .btnDesencriptar:hover{
         margin: 0.3%;
@@ -294,9 +277,9 @@ footer{
     }
     .contenedorEncriptado{
         width: 80%;
-        height: 15%;
+        height: 35%;
         left: 10%;
-        top: 80%;
+        top: 58%;
     }
     .mensajeEncriptado{
         width: 100%;
