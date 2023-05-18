@@ -7,7 +7,7 @@
 
 .logo{
     margin: 1em;
-    width: 3%;
+    width: 2.5%;
 }
 
 .txtArea{
@@ -17,7 +17,6 @@
     left: 12%;
     top: 15%;
     border: none;
-    /*border-radius: 10px;*/
     resize: none;
     font-family: system-ui;
     font-style: normal;
@@ -51,15 +50,16 @@
 }
 
 .aviso p{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
     font-size: 12px;
     font-weight: 400;
     line-height: 150%;
     font-family: system-ui;
     color: rgba(58, 45, 45, 0.671);
     opacity: 0.8;
-    flex: none;
-    order: 1;
-    flex-grow: 0;
 }
 
 .botones{
@@ -95,7 +95,7 @@
     box-sizing: border-box;
     display: flex;
     flex-direction: row;
-    align-items: flex-start;
+    align-items: center;
     justify-content: center;
     padding: 2%;
     gap: 8px;
@@ -173,9 +173,9 @@
     flex-direction: column;
     justify-content: center;
     position: absolute;
-    width: 85%;
-    height: 55%;
-    top: 10%;
+    width: 80%;
+    height: 90%;
+    top: 2%;
     padding: 1em 1em;
     align-items: center;
     
@@ -185,12 +185,12 @@
     padding: 0.5em 0.5em;
     margin: 0.5em 0.5em;
     position: absolute;
-    width: 75%;
-    height: 70%;
+    width: 90%;
+    height: 75%;
     top: 5%;
     resize: none;
     border: none;
-    border-radius: 20px;
+    border-radius: 15px;
     font-family: system-ui;
     font-style: normal;
     font-weight: 300;
@@ -204,9 +204,8 @@
     display: flex;
     justify-content: center;
     position: absolute;
-    padding: 2%;
-    top: 82%;
-    width: 60%;
+    top: 85%;
+    width: 65%;
     height: 10%;
     background: #d8dfe8;
     border: 1px solid #0a3871 ;
@@ -216,7 +215,7 @@
     font-weight: 400;
     line-height: 19px;
     align-items: center;
-    flex-direction: row-reverse;
+    flex-direction: row;
 
 }
 
@@ -256,7 +255,7 @@ footer p{
     .aviso{
         width: 80%;
         left: 10%;
-        top: 47%;
+        top: 46%;
     }
     .aviso p{
         font-size: 16px;
@@ -264,7 +263,7 @@ footer p{
     .botones{
         width: 80%;
         left: 10%;
-        top: 50%;
+        top: 51%;
     }
     .btnEncriptar, .btnDesencriptar{
         width: 48%;
@@ -277,18 +276,25 @@ footer p{
     }
     .contenedorEncriptado{
         width: 80%;
-        height: 35%;
+        height: 47%;
         left: 10%;
-        top: 58%;
+        top: 60%;
     }
     .mensajeEncriptado{
         width: 100%;
-        top: 5%;
+        top: 30%;
     }
     .contenedorEncriptado img{
         top: 0;
         display: none;
         visibility: hidden;
+    }
+    footer{
+        padding-top: 13%;
+    }
+    .txtAreaResultado{
+        top: 2%;
+        font-size: 23px;
     }
 
    
